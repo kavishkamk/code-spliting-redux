@@ -5,7 +5,7 @@ export const nameSlice = createSlice({
     initialState: { fname: "kavishka"},
     reducers: {
         comb: state => {
-            state.value = state.value + " Hi";
+            state.fname = state.fname + " Hi";
         }
     }
 });

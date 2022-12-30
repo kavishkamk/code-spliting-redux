@@ -18,7 +18,7 @@ export const store = configureStore({reducer: staticReducers, middleware: (getDe
 export const injectReducer = (reducerMap) => {
 
   const state = store.getState();
-  const previousReducers = state.reducerList.reducerList;
+  const previousReducers = (state['reducerList'])['reducerList'];
   console.log(previousReducers);
 
   const trackedReducersList = {
